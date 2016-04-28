@@ -1,25 +1,14 @@
 package com.example.jupitercls.appleangchhean;
 
-import android.app.ActionBar;
-import android.content.Context;
-import android.content.ContextWrapper;
+
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 ListView lst;
@@ -54,7 +43,6 @@ ListView lst;
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1,
                                     int position, long arg3) {
-                // TODO Auto-generated method stub
                 int itemPosition = position;
 
                 // ListView Clicked item value
@@ -67,10 +55,6 @@ ListView lst;
                 intentCall.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intentCall);
 
-                // Show Alert
-//                Toast.makeText(getApplicationContext(),
-//                        "Position :" + itemname[itemPosition] + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
-//                        .show();
             }
         });
     }
